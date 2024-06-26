@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoselectores y Pseudoelementos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Prueba 10 Pseudoclases</h1>
+    <section>
+        <div>
+          <h2>1. Pseudoclase :dir</h2>
+          <h6 dir="rtl">El ejemplo aquí</h6>
+        </div>
+        <div>
+          <h2>2. Pseudoclase :empty</h2>
+          <div class="vacio"></div>
+        </div>
+        <div>
+          <h2>3. Pseudoclase :first</h2>
+          <p>Primera página para imprimir</p>
+          <p>Segunda página para imprimir</p>
+        </div>
+        <div>
+            <h2>4. Pseudoclase :focus</h2>
+            <div><input class="green" value="Seré verde cuando me enfoques" /></div>
+            <div><input class="blue" value="Seré azul cuando me enfoques" /></div> 
+        </div>
+        <div>
+            <h2>5. Pseudoclase :hover</h2>
+            <button type="button">Pase el cursor aquí</button>
+        </div>
+        <div>
+            <h2>6. Pseudoclase :indeterminate</h2>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">Esta etiqueta comienza con el color rosa.</label>
+          </div>
+          <div>
+            <input type="radio" id="radio" />
+            <label for="radio">Esta etiqueta comienza con el color rosa.</label>
+          </div>
+          <div>
+            <h2>7. Pseudoclase :last-of-type</h2>
+            <p>Primer elemento</p>
+            <p>Segundo elemento</p>
+            <p>Tercer elemento</p>
+          </div>
+          <div>
+            <h2>8/9. Pseudoclase :read-only y :read-write</h2>
+            <input type="text" value="Este es un campo editable." />
+            <input type="text" value="Este es un campo de solo lectura." readonly />
+          </div>
+          <div>
+            <h2>10. Pseudoclase :target</h2>
+            <ol>
+                <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+                <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+                <li><a href="#">Click aquí para no resaltar nada</a></li>
+            </ol>
+            <p id="p1">
+                Si haces click en el elemento 1 se va a resaltar este parrafo
+              </p>
+              <p id="p2">
+                Si haces click en el elemento 2 se va a resaltar este parrafo
+              </p>
+          </div>
+    </section>
+</body>
+</html>

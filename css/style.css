@@ -1,0 +1,92 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: red;
+}
+
+:dir(rtl) {
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.vacio:empty{
+    outline: 3px solid green;
+    height: 30px;
+    width: 50%;
+}
+
+@page :first{
+    margin-left: 50%;
+    margin-top: 40%;
+}
+
+p{
+    page-break-after: always;
+}
+
+.green:focus{
+    color: green;
+    background: rgb(228, 220, 220);
+}
+
+.blue:focus{
+    color: blue;
+    background: rgb(228, 220, 220);
+}
+
+button{
+    background-color: rgba(165, 80, 31, 0.5);
+    color: blueviolet;
+    border-radius: 10%;
+    border: transparent;
+    width: 200px;
+    height: 40px;
+}
+
+button:hover{
+    color: rgb(165, 80, 31);
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+input:indeterminate + label{
+    background: pink;
+}
+
+p:last-of-type{
+    color: white;
+    background: black;
+    width: 200px;
+    height: 30px;
+    font-style: italic;
+}
+
+input {
+    width: 200px;
+}
+
+input:read-only {
+    background: yellow;
+}
+
+input:read-write{
+    background: green;
+    color: white;
+}  
+
+p:target::before {
+    content: "👉";
+}
+
+p:target {
+    background-color: plum;
+    color: black;
+    width: 500px;
+    content: "►";
+}
